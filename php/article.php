@@ -50,7 +50,7 @@ $articleInfos = [
     
         <p><span class="sticker_article sticker_article_green"><?php echo $articleInfos ['catégorie'] ?></span>
         <p class='posted_article_infos'><img src='<?php echo $articleInfos ['image_auteur'] ?>' alt='icon de john' /> 
-            <strong> <?php echo $articleInfos ['auteur'] ?> </strong><span class="article_date"> <?php echo $articleInfos ['date'] ?></span>
+            <strong> <?php echo $articleInfos ['auteur'] ?> </strong><span class="article_date"> <?php echo $articleInfos ['dateHtml'] ?></span>
             </p>
         <p class="posted_article_content"><?php echo $articleInfos ['texte'] ?> </p>
 

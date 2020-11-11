@@ -1,3 +1,21 @@
+<?php
+$MenuNav = [
+   'Plan du site' => '#',
+   'Mention légales' => '#',
+   'Contact' =>  '#',
+
+]
+
+
+
+
+?>
+
+
+
+
+
+
 
 <section class="section_part section_part_left">
     <header class="section_part_left_header">
@@ -21,9 +39,11 @@
     <footer class="section_part_left_footer">
     <nav class='navigation'>
         <ul class="navigation_btn">
-            <li><a href='#'>Plan du site</a></li>
-            <li><a href='#'>Mentions légales</a></li>
-            <li><a href='#'>Contact</a></li>
+            <?php
+            foreach ($MenuNav as $element => $link) {
+                echo '<li><a href='.$link.'>'.$element.'</a></li>';
+            }
+            ?>
         </ul>
     </nav>
     </footer>
