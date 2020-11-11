@@ -134,7 +134,7 @@ body {
         flex: 1;
         min-width: 50vw;    
         min-height: 100vh; 
-        overflow: scroll;
+       
         }
         
         .section_part_right_header {
@@ -143,6 +143,7 @@ body {
             display: flex;
             align-items: center;
             background-color: #f1f1f1;
+            border-bottom: solid 1px rgb(209, 209, 209, 0.5);
         }
 
              .section_part_right_header_title {
@@ -151,62 +152,57 @@ body {
                  font-family: 'Oswald', sans-serif;
                  font-size: 2em;
              } 
-    
-        .section_part_right_group_article {
-            display: grid;
-            grid-template-columns: 25vw 25vw ;
-            justify-content: space-evenly;
-            grid-template-rows: 45vh 45vh;
-        }
 
-            .posted_article {
-                display: flex;
-                flex-direction: column;
-                border-top: solid 1px  #eaeaea;
-                border-right:solid 1px  #eaeaea;
-                padding: 20px 30px 15px 40px;
-                overflow: auto;
-                font-family: 'Oswald', sans-serif;
-            }
+    .sectionRight_mainBlock {
+       
+       
+      
+    }
 
-                .posted_article img {
-                    width: 2em;
-                    margin-right: 10px;
+
+    .sectionRight_formulaire {
+       
+        border: solid 1px rgb(209, 209, 209, 0.5);
+        margin: 30px 30px 30px 30px;
+        padding:30px 30px 30px 30px;
+    }
+       .fieldset1 {
+           display: flex;
+           flex-direction: row;
+         
+           border-left: solid 2px #4cced3 ;
+           padding-left: 10px;
+
+       }
+                .formLabels {
+                    width: 35%;
+                    background-color: darkcyan;
+                  
+                   
                 }
-
-                .article_date {
-                    color: rgb(194, 194, 194);
+                .formInputs {
+                   
+                    margin: 0px;
+                    padding: 0px;
+                    line-height: 0px;
+                    width: 40%px;
+                    padding-left: 20px;
+                   
+                    background-color: crimson;
+                    
                 }
-
-                .posted_article_infos {
-                    font-size: 0.8em;
+                .formInputs2 {
+                    background-color: crimson;
+                    margin: 0px;
+                    padding: 0px;
+                    width: 90%;
+                    padding-left: 20px;
+                   
                 }
-
-                .posted_article_content {
-                    overflow: hidden ;
-                }
-
-                .sticker_article {
-                    background-color: lightseagreen;
-                    padding: 0.9px 7px 2px 7px;
-                    text-transform: uppercase;
-                    font-size: 0.8em;
-                    color: white;
-                    border-radius: 4px;
-                }
-                    .sticker_article_red {
-                        background-color: red;
+                    .inputChamps {
+                        width: 100%;
+                        background-color: #ececec73;
+                        border: none;
+                        border-bottom: solid 2px #4cced3;
+                        margin-bottom: 3px;
                     }
-                    .sticker_article_blue {
-                        background-color: blue;
-                        
-                    }
-                    .sticker_article_green {
-                        background-color: limegreen;
-                    }
-
-                    .article_rest_link {
-                        font-weight: bold;
-                        text-decoration: underline ;
-                    }
-            
