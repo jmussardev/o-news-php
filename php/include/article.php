@@ -11,7 +11,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-<?php include 'include/section-left.php'?>
+<section class="section_part section_part_left">
+
+<?php   include 'include/header-left.php';
+        include 'include/aside-left.php';
+        include 'include/footer-left.php'; ?>
+
+
+
+</section>
 
 <section class="section_part section_part_right">
     <header class='section_part_right_header'>

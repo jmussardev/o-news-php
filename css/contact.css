@@ -12,10 +12,10 @@ body {
     .section_part_left {
     
         
-        background-image:  url('../images/nicole.jpg');
+        background-image:  url('../images/gabriel.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        background-position-y: -9rem;
+        
       
         
         flex: 1;
@@ -73,14 +73,14 @@ body {
            height: 200px;
            width: 90%;
            margin: auto;
-           padding:  0px 50px 0px 50px;
+           padding:  0px 0px 0px 200px;
 
            text-align: right;
            overflow: hidden;
            color: white;
            text-shadow: 2px 2px 6px #000000;
          
-            background-color: rgb(206, 206, 206, 0.5)
+          
 
         }       
              .section_part_left_middle_aside h1 {
@@ -152,7 +152,12 @@ body {
                  font-size: 2em;
              } 
     
-  
+        .section_part_right_group_article {
+            display: grid;
+            grid-template-columns: 25vw 25vw ;
+            justify-content: space-evenly;
+            grid-template-rows: 45vh 45vh;
+        }
 
             .posted_article {
                 display: flex;
