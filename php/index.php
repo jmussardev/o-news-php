@@ -39,7 +39,7 @@
         </p>
         <p class="posted_article_content"> Siquis enim militarium vel honoratorum aut nobilis inter suos rumore tenus esset insimulatus fovisse partes hostiles, iniecto onere catenarum in modum beluae trahebatur et inimico urgente vel nullo, quasi sufficiente</p>
 
-        <p><a href='#' class='article_rest_link'>Continue reading</a></p>
+        <p><a href='article2.php' class='article_rest_link'>Continue reading</a></p>
 
       </article>
       <article class="posted_article">
@@ -51,7 +51,7 @@
             </p>
         <p class="posted_article_content"> Siquis enim militarium vel honoratorum aut nobilis inter suos rumore tenus esset insimulatus fovisse partes hostiles, iniecto onere catenarum in modum beluae trahebatur et inimico urgente vel nullo, quasi sufficiente</p>
         
-        <p><a href='#' class='article_rest_link'>Continue reading</a></p>
+        <p><a href='article3.php' class='article_rest_link'>Continue reading</a></p>
 
       </article>
       <article class="posted_article">
@@ -63,7 +63,7 @@
             </p>
         <p  class="posted_article_content"> Siquis enim militarium vel honoratorum aut nobilis inter suos rumore tenus esset insimulatus fovisse partes hostiles, iniecto onere catenarum in modum beluae trahebatur et inimico urgente vel nullo, quasi sufficiente</p>
 
-        <p><a href='#' class='article_rest_link'>Continue reading</a></p>
+        <p><a href='article4.php' class='article_rest_link'>Continue reading</a></p>
 
        </article>
        <article class="posted_article">
