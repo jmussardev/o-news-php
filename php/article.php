@@ -6,28 +6,27 @@
 
     <!-- Reboot.css est un reset amélioré (avec des valeurs par défaut standardisées) https://getbootstrap.com/docs/4.1/content/reboot/ -->
     <link rel="stylesheet" href="../css/reboot.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/article.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-<?php include 'include/section-left' ?>
+<?php include 'include/section-left'?>
+
 <section class="section_part section_part_right">
     <header class='section_part_right_header'>
-    <h1 class='section_part_right_header_title'> Lastest news </h1>
+    <h1 class='section_part_right_header_title'> Lorem ipsum dolor sit amet </h1>
     </header>
     
     <div class='section_part_right_group_article'>
       <article class="posted_article">
     
-        <p><span class="sticker_article sticker_article_green">news</span></p>
-        <h2>Lorem ipsum dolor sit amet</h2></span>
-        </p>
+        <p><span class="sticker_article sticker_article_green">news</span>
         <p class='posted_article_infos'><img src='../images/icon-john.png' alt='icon de john' /> 
             <strong> John Marchill </strong><span class="article_date"> le 5 Septembre 2019</span>
             </p>
-        <p class="posted_article_content"> Siquis enim militarium vel honoratorum aut nobilis inter suos rumore tenus esset insimulatus fovisse partes hostiles, iniecto onere catenarum in modum beluae trahebatur et inimico urgente vel nullo, quasi sufficiente</p>
+        <p class="posted_article_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum pariatur sequi cum repellendus. Nulla, eius animi dignissimos velit earum voluptatibus maxime sequi impedit? Laborum saepe tempora dolore voluptate quas, reprehenderit deleniti unde quae fuga suscipit nostrum veritatis et autem, fugiat facilis ad nesciunt, alias delectus. Blanditiis velit aliquam delectus. Dolorem, beatae in neque rerum itaque quidem tempora vitae maxime laboriosam voluptatem sit sed laborum eaque laudantium odio ut, ratione ad adipisci quos explicabo magni consectetur. Magni impedit maiores deserunt quidem blanditiis quam enim, possimus iste rem quis necessitatibus nemo explicabo maxime consectetur cumque dolore aut provident! Ratione voluptatem, obcaecati accusamus inventore tenetur debitis adipisci, temporibus deserunt rem repudiandae laudantium corporis sint! Similique iusto distinctio provident minima consequatur quo ad quae nihil, praesentium possimus veniam quas fugit reprehenderit. Hic enim ipsam error sint, quis similique. Debitis placeat obcaecati deleniti enim nihil velit exercitationem, porro facilis sit animi nesciunt consequuntur possimus molestias ad qui saepe nobis dolores iste dolorem ex. Beatae eveniet maxime magni soluta quisquam, vero temporibus nisi et nulla asperiores debitis quia. Rem ratione saepe vitae distinctio voluptates soluta error cumque amet? Beatae optio quae expedita quisquam eligendi incidunt odit vero ad illum autem possimus maiores nam neque delectus, accusantium tenetur exercitationem enim at corrupti consequatur, cumque reiciendis placeat. Placeat quaerat aliquam quidem nemo facere inventore nesciunt ea deserunt quia libero, odit perspiciatis rerum corporis voluptates minus vitae, magnam nulla.</br></br> Expedita in eligendi laudantium magni beatae doloribus, eaque culpa iure dolorem, esse totam molestias quibusdam repellat adipisci quae corporis exercitationem voluptates sint fugit? Nihil maxime qui minus est eum! Provident adipisci distinctio deleniti ducimus consequatur quasi possimus nisi illo error explicabo aliquam dicta harum reprehenderit, omnis quidem et, laudantium magni? Repudiandae quam eos repellendus quisquam voluptates saepe porro voluptatibus ullam doloribus obcaecati quidem laboriosam corrupti veritatis at accusamus distinctio sunt nisi laudantium voluptatum molestias, libero pariatur fugiat autem! Assumenda deserunt voluptas quod accusamus sed dignissimos eveniet aliquid, eum voluptatibus non nobis consequuntur id ullam quis corrupti blanditiis natus voluptatum illum consequatur voluptate. Tempora, animi. Neque quod illum laboriosam et suscipit quaerat fuga, ab minus, molestias id eaque aspernatur mollitia optio voluptates porro possimus dicta? Fugiat alias consequatur excepturi, provident dignissimos tenetur! Laboriosam quia officiis dolore asperiores incidunt, vitae laborum quas quisquam optio neque omnis ex nam iste dolorem dolores et nisi, sed quod rerum? Nostrum dolor ullam, qui unde aperiam placeat enim neque? Eius praesentium animi maxime magnam sit quasi. </p>
 
-        <p><a href='#' class='article_rest_link'>Continue reading</a></p>
+        <p><a href='../php/index.php' class='article_back_link'>Back to home</a></p>
 
        
 

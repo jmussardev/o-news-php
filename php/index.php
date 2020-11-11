@@ -27,7 +27,7 @@
             </p>
         <p class="posted_article_content"> Siquis enim militarium vel honoratorum aut nobilis inter suos rumore tenus esset insimulatus fovisse partes hostiles, iniecto onere catenarum in modum beluae trahebatur et inimico urgente vel nullo, quasi sufficiente</p>
 
-        <p><a href='../html/article.html' class='article_rest_link'>Continue reading</a></p>
+        <p><a href='article.php' class='article_rest_link'>Continue reading</a></p>
 
        </article>
        <article class="posted_article">
