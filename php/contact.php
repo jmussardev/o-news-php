@@ -59,25 +59,27 @@
               
             </div>
             
-        </fieldset>
+        </fieldset></br>
+
         <fieldset class='fieldset1'>
             <legend>Message</legend>
             <p class='formLabels'>Répondez-moi via</br>
-             Je voulais vous dire que<p> 
+             Je voulais vous dire que</br></br></br></br></br> Et vous montrer ça aussi<p> 
                 <div class='formInputs2'>
                 <p> <input type="mail" name='mail' placeholder="Adresse e-mail" class='inputChamps'>
-             <textarea name='message' class='inputChamps' rows="4"> </textarea></p>
-             <!-- Et vous montrer ça aussi -->
-           <input type='file' name='fichier'></div>
-        </fieldset>
+             <textarea name='message' class='inputChamps' rows="4">Votre message</textarea>
+             
+           <input type='file' name='fichier'></div></p>
+        </fieldset></br>
 
 
-        <fieldset>
-            <p>Je certifie la véracité de ces informations. <input type='checkbox' name='certification'> </p>
+        <fieldset class='fieldset1'>
+            <p class='formLabels'>Je certifie la véracité de ces informations. </p>
+            <p class='formInputs2'><input type='checkbox' name='certification'> </p>
             
-        </fieldset>
+        </fieldset></br>
 
-        <p> <input type='submit' value="Envoyer"> </p>
+        <p> <input class='form_submitBtn' type='submit' value="Envoyer"> </p>
 
         </form>
     </div>

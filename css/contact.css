@@ -5,6 +5,9 @@ body {
     max-height: 100vh;
   
 }
+textarea {
+    resize: none;
+}
 
 
 /* Section gauche */
@@ -175,28 +178,28 @@ body {
 
        }
                 .formLabels {
-                    width: 35%;
-                    background-color: darkcyan;
+                    flex: 1;
+                    
+                    
                   
                    
                 }
                 .formInputs {
-                   
+                    flex:3;
                     margin: 0px;
                     padding: 0px;
                     line-height: 0px;
                     width: 40%px;
-                    padding-left: 20px;
-                   
-                    background-color: crimson;
-                    
                 }
+               
+
                 .formInputs2 {
-                    background-color: crimson;
+                    flex:3;
+                    
                     margin: 0px;
                     padding: 0px;
                     width: 90%;
-                    padding-left: 20px;
+                    
                    
                 }
                     .inputChamps {
@@ -206,3 +209,19 @@ body {
                         border-bottom: solid 2px #4cced3;
                         margin-bottom: 3px;
                     }
+
+                    .form_submitBtn {
+                        font-size: 1.2em;
+                        font-weight: 500;
+                        padding: 3px 10px 5px 10px;
+                        background-color: #4cced3;
+                        color: white;
+                        border: none;
+                        border-radius: 5px;
+
+                    }
+                        .form_submitBtn:focus {
+                            border: none;
+                            background-color:  #ececec73;
+
+                        }
