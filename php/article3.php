@@ -8,11 +8,14 @@ $articleInfos = [
 'dateHtml' => 'le 7 Août 2019',
 'date' => date('l jS \of F Y '),
 'image_auteur' => '../images/icon-ohz.png',
-
+'alt' => 'icon-ohz',
 ];
 
+include 'inc/content/article.php';
 
-include 'include/article.php';
+    
+
+
 
 
 

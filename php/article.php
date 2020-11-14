@@ -7,13 +7,13 @@ $articleInfos = [
 'catégorieClass' => 'green',
 'dateHtml' => 'le 5 septembre 2019',
 'date' => date('l jS \of F Y '),
-'image_auteur' => '../images/icon-john.png'
-
+'image_auteur' => '../images/icon-john.png',
+'alt'=>'icon-john',
 ];
 
-include 'include/article.php';
+include 'inc/content/article.php';
 
-
+    
 
 
 

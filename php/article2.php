@@ -7,12 +7,14 @@ $articleInfos = [
 'catégorieClass' => 'red',
 'dateHtml' => 'le 2 Août 2019',
 'date' => date('l jS \of F Y '),
-'image_auteur' => '../images/icon-dar.png'
+'image_auteur' => '../images/icon-dar.png',
+'alt'=>'icon-dar',
 
 ];
 
-include 'include/article.php';
+include 'inc/content/article.php';
 
+    
 
 
 
