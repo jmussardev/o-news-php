@@ -1,3 +1,37 @@
+<?php 
+if (isset($_GET['prenom'])) {
+    $prenom = $_GET['prenom'];
+}
+else {
+    $prenom = "";
+}
+
+if (isset($_GET['nom'])) {
+    $nom = $_GET['nom'];
+}
+else {
+    $nom = '';
+}
+
+if (isset($_GET['gender'])) {
+    $gender = $_GET['gender'];
+}
+else {
+    $gender ='';
+}
+
+if (isset($_GET['mediaSelect'])) {
+    $mediaSelect = $_GET['mediaSelect'];
+}
+else {
+    $mediaSelect = '';
+}
+?>
+
+<!-- ================================================================================================================================ -->
+
+
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -34,17 +68,32 @@
              <header class='sectionRight_header'>
                   <h1 class='sectionRight_header_title'> Contact </h1>
              </header>
+             <!-- <div><?php   print_r($_POST);     ?></div> -->
              <div class='sectionRight_mainBlock'>
-                  <form method="POST" action="#" class='sectionRight_formulaire'>
+                  <form method="POST" action="#" class='sectionRight_contactForm'>
                     <fieldset class='fieldset1'>
                             <legend>Identité</legend>
                             <div class="formChamps">
                                 <label class='formLabel'> Je suis </label>
                                 <span class='inputChamps'>
-                                    <input type='radio' id='woman' name='sexe' value='woman'>
-                                    <label for='woman'> une femme /</label>
-                                    <input type='radio' id='man' name='sexe' value='man'>
-                                    <label for='man'> un homme </label>
+                                    <?php 
+                                    if ($gender === 'woman') {
+                                        echo'<input type="radio" id="woman" name="gender" value="woman" checked>';
+                                    }
+                                    else {
+                                          echo'<input type="radio" id="man" name="gender" value="man" checked>';
+                                    }
+                                    ?>
+                                    <label for='woman' class='gender_choice'> une femme /</label>
+                                    <?php 
+                                    if ($gender === 'man') {
+                                        echo'<input type="radio" id="man" name="gender" value="man" checked>';
+                                    }
+                                    else {
+                                        echo '<input type="radio" id="man" name="gender" value="man">';
+                                    }
+                                    ?>
+                                    <label for='man' class='gender_choice'> un homme </label>
                                 </span>
                             </div>
                             <div class="formChamps">
@@ -53,26 +102,44 @@
                             </div>
                             <div class="formChamps">
                                 <label  class='formLabel' for="nom">Et mon nom,</label>
-                                <input class='inputChamps2' type='text' name='nom' id='nom' placeholder="Nom">  
+                                <input class='inputChamps2' type='text' name='nom' id='nom' placeholder="Nom"> 
                             </div>
                             <div class="formChamps">
                                 <label class="formLabel" for="mediaSelect">J'ai connu le site grâce à</label>
                                 <select class='inputChamps2' name="mediaSelect" id="mediaSelect">
-                                <option value="">choisir</option>
-                                <option value="Facebook">Facebook</option>
-                                <option value="Twitter">Twitter</option>
-                                <option value="Google">Google</option>
-                                <option value="Bouche à oreilles" >Bouche à oreilles</option>
-                                <option value="JT de 13h de Jean-Pierre Pernault">JT de 13h de Jean-Pierre Pernault</option>
-                                <option value="Autre">Autre</option>
+                                <?php 
+                                if ($mediaSelect !== '') {
+                                    echo '<option value="" disabled hidden>Choisir</option>';
+                                }
+                                else {
+                                    echo '<option value="" disabled selected hidden>Choisir</option>';
+                                }
+                                ?>
+                                <?php 
+                                    $decouvertes = [
+                                        'facebook',
+                                        'twitter',
+                                        'google',
+                                        'bouche à oreilles',
+                                        'jt de 13h',
+                                        'autre',
+                                    ];
+                                    foreach ($decouvertes as $media)
+                                    if ( $mediaSelect === $media){
+                                        echo '<option value="'.$media.'" selected>'.$media.'</option>';
+                                    }
+                                    else {
+                                        echo '<option value="'.$media.'">'.$media.'</option>';
+                                    }
+                                ?>
                                 </select>
                             </div>
                     </fieldset></br>
                     <fieldset class='fieldset1'>
                             <legend>Message</legend>
                             <div class="formChamps">
-                                <label class="formLabel for="mail">Répondez-moi via</label>
-                                <input class='inputChamps2' type="mail" name='mail' id="mail" placeholder="Adresse e-mail" class='inputChamps'>
+                                <label class="formLabel for="email">Répondez-moi via</label>
+                                <input class='inputChamps2' type="email" name='email' id="mail" placeholder="Adresse e-mail" class='inputChamps'>
                             </div>
                             <div class="formChamps">
                                 <label class="formLabel for="message">Je voulais vous dire que </label>

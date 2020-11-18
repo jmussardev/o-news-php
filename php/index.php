@@ -1,3 +1,12 @@
+<?php
+
+include 'inc/content/data.php';
+
+
+?>
+
+
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -28,7 +37,7 @@
                 </nav>
             </header> 
             <section class="sectionRight">
-                <?php include 'inc/content/index-content.php'; ?>
+                <?php include 'inc/content/home.php'; ?>
             </section>
         </div>
     </body>
