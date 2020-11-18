@@ -194,6 +194,12 @@
                         color: white;
                         border-radius: 4px;
                         width: min-content;
+                        
+                    }
+
+                    .sectionRight_article a, .sectionRight_articleS a {
+                        
+                        text-decoration: none;
                     }
                         .post_sticker_red {
                             background-color: red;

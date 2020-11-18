@@ -1,4 +1,6 @@
 <?php 
+include 'inc/data.php';
+
 if (isset($_GET['prenom'])) {
     $prenom = $_GET['prenom'];
 }
@@ -58,7 +60,13 @@ else {
                     </p>
                 </aside>
                 <nav class="mainHeader_nav">
-                    <?php include 'inc/content/mainHeader-nav.php'; ?>
+                    <ul class="nav_btn">
+                        <?php
+                            foreach ($MenuNav as $element => $link) {
+                                echo '<li class="nav_btn_item"><a href="'.$link.'">'.$element.'</a></li>';
+                            }
+                        ?>
+                    </ul>
                 </nav>
             </header> 
 
@@ -68,6 +76,7 @@ else {
              <header class='sectionRight_header'>
                   <h1 class='sectionRight_header_title'> Contact </h1>
              </header>
+             <!-- Debug -->
              <!-- <div><?php   print_r($_POST);     ?></div> -->
              <div class='sectionRight_mainBlock'>
                   <form method="POST" action="#" class='sectionRight_contactForm'>

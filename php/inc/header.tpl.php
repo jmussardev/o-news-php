@@ -1,8 +1,5 @@
 
-
-
-
-<!DOCTYPE html
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
@@ -28,28 +25,12 @@
                     </p>
                 </aside>
                 <nav class="mainHeader_nav">
-                    <?php include 'inc/content/mainHeader-nav.php'; ?>
+                    <ul class="nav_btn">
+                        <?php
+                            foreach ($MenuNav as $element => $link) {
+                                echo '<li class="nav_btn_item"><a href="'.$link.'">'.$element.'</a></li>';
+                            }
+                        ?>
+                    </ul>
                 </nav>
             </header> 
-            <section class="sectionRight">
-            <header class='sectionRight_header'>
-    <h1 class='sectionRight_header_title'> <?php echo $articleInfos ['titre'] ?>  </h1>
-    </header>
-    
-    <div class='sectionRight_articleS'>
-
-    <article class="sectionRight_article">
-            <span class="post_sticker post_sticker_<?php echo $articleInfos ['catégorieClass'] ?>"><?php echo $articleInfos ['catégorie'] ?></span>
-            <h2>Lorem ipsum dolor sit amet</h2>
-            <div class='post_infos'>
-                <img src='<?php echo $articleInfos ['image_auteur'] ?>' alt='icon de john' /> 
-                <span> <strong> <?php echo $articleInfos ['auteur'] ?> </strong>
-                <span class="post_date"><?php echo $articleInfos ['dateHtml'] ?></span></span>
-            </div>
-            <p class="post_content"><?php echo $articleInfos ['texte'] ?></p>
-            <p><a href='index.php' class='back_link'>Back to home</a></p>
-        </article>
-            </section>
-        </div>
-    </body>
-</html>

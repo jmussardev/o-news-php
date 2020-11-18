@@ -1,4 +1,35 @@
 <?php
+//menue Nav
+// tableau contenant les liens et titre de la navigation
+$MenuNav = [
+    // Clé = le titre, l'ancre
+    // Valeur = le lien
+    'Plan du site' => 'plan_du_site.php',
+    'Mentions légales' => 'mentions_legales.php',
+    'Contact' => 'contact.php'
+];
+
+$navBis = [
+    // Sous tableau avec titre et lien => $currentLinkInfos dans la template
+    [
+        'title' => 'Plan du site',
+        'url' => 'plan_du_site.php'
+    ],
+    // Sous tableau avec titre et lien
+    [
+        'title' => 'Mentions légales',
+        'url' => 'mentions_legales.php'
+    ],
+    // Sous tableau avec titre et lien
+    [
+        'title' => 'Contact',
+        'url' => 'contact.php'
+    ]
+];
+
+
+
+
 //Pour améliorer notre site, on va cebntraliser les données sur tous les articles ici
 $postLists = [
     // Numéro d'articles => tableau des données de l'article

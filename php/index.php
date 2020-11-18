@@ -1,44 +1,15 @@
 <?php
+// fichier contenant les données du site 
+include 'inc/data.php';
+// on inclut le fichier de fonction 
+include 'inc/functions.php';
+// J'ai besoin de la liste de tous les articles
+$articles = getArticles();
 
-include 'inc/content/data.php';
-
-
-?>
 
 
 
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>oNews</title>
-        <!-- Reboot.css est un reset amélioré (avec des valeurs par défaut standardisées) https://getbootstrap.com/docs/4.1/content/reboot/ -->
-        <link rel="stylesheet" href="../css/reboot.css">
-        <link rel="stylesheet" href="../css/style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div class="bodyWrap">
-            <header class="mainHeader">
-                <div class="mainHeader_logo">
-                    <div class="mainheader_logo_title">
-                        <h1>O'CLOCK</br>STUDENTS</br>NEWS</h1>
-                    </div>
-                </div>
-                <aside class="mainHeader_aside">
-                    <p>
-                        <h1> Latest news <em>from our students</em> </h1>
-                    </p>
-                    <p>Siquis enim militarium vel honoratorum aut nobilis inter suos rumore tenus esset insimulatus fovisse partes hostiles, iniecto onere catenarum in modum beluae trahebatur et inimico urgente vel nullo, quasi sufficiente
-                    </p>
-                </aside>
-                <nav class="mainHeader_nav">
-                    <?php include 'inc/content/mainHeader-nav.php'; ?>
-                </nav>
-            </header> 
-            <section class="sectionRight">
-                <?php include 'inc/content/home.php'; ?>
-            </section>
-        </div>
-    </body>
-</html>
+ include 'inc/header.tpl.php' ;          
+ include 'inc/home.tpl.php'; 
+ include 'inc/footer.tpl.php';
+            
