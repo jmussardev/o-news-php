@@ -8,7 +8,7 @@
 
         <?php foreach ($articles as $postID => $currentPost) :   ?>
         <article class="sectionRight_articleS_post">
-                <a class="post_sticker_catLink" href=""><span class="post_sticker post_sticker_<?= $currentPost['catégorieClass']; ?>"><?= $currentPost['catégorie']; ?></span></a>
+                <a class="post_sticker_catLink" href=""><span class="post_sticker post_sticker--<?= $currentPost['catégorie']; ?>"><?= $currentPost['catégorie']; ?></span></a>
                 <h2><?= $currentPost['titre']; ?></h2>
                 <div class='post_infos'>
                     <img src="<?= $currentPost['image_auteur']; ?>" /> 

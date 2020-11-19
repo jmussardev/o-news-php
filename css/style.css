@@ -23,6 +23,7 @@
             flex-direction: column;     
             justify-content: space-between;   
     }
+    
     /* Logo titre */
     /* .mainHeader_logo {
         display: flex;
@@ -34,11 +35,14 @@
            background: url('../images/onews.svg') no-repeat 0px 6px  ;
            background-size: 110px 60px;
 
-           width: 500px;
+           width: fit-content;
            height: 300px;
            padding: 0px 0px 0px 95px;
            margin: 75px 0px 0px 50px;
 
+        }
+        .mainHeader_logo a {
+            text-decoration: none;
         }
 
             .mainheader_logo_title {
@@ -201,14 +205,14 @@
                         
                         text-decoration: none;
                     }
-                        .post_sticker_red {
+                        .post_sticker--team {
                             background-color: red;
                         }
-                        .post_sticker_blue {
+                        .post_sticker--work {
                             background-color: blue;
                             
                         }
-                        .post_sticker_green {
+                        .post_sticker--news {
                             background-color: limegreen;
                         }
 

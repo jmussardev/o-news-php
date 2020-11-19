@@ -8,8 +8,9 @@ $articleId = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
 $articleInfos = getSingleArticle($articleId);
 // debug
 // print_r($post); exit;
-
+include 'inc/header.tpl.php';
 include 'inc/article.tpl.php';
+include 'inc/footer.tpl.php';
 
     
 

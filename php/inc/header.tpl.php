@@ -13,9 +13,11 @@
         <div class="bodyWrap">
             <header class="mainHeader">
                 <div class="mainHeader_logo">
-                    <div class="mainheader_logo_title">
-                        <h1>O'CLOCK</br>STUDENTS</br>NEWS</h1>
-                    </div>
+                    <a href="index.php"/>  
+                        <div class="mainheader_logo_title">
+                            <h1>O'CLOCK</br>STUDENTS</br>NEWS</h1>
+                        </div>
+                    </a>
                 </div>
                 <aside class="mainHeader_aside">
                     <p>
